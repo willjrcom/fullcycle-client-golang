@@ -16,6 +16,7 @@ func getExchangeRate(ctx context.Context) (any, error) {
 	}
 
 	resp, err := client.Get("http://localhost:8080/cotacao")
+
 	if err != nil {
 		return 0, err
 	}
